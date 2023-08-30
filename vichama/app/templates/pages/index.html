@@ -1,0 +1,212 @@
+{% load static %}
+
+{%include "header.html" %}
+
+{%include "navbar.html" %}
+
+<!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <img src="{% static '/img/hero-img.png'%}" alt="home img" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Disfruta de <br>
+                            una deliciosa <br> comida
+                            <div>
+                                <img src="{% static '/img/broaster.png'%}" alt="home image" class="">
+                            </div>
+                        </h1>
+                        <p class="home__description">
+                            Disfruta de una buena comida junto a nosotros
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, odio numquam! Magni distinctio et nemo. Laborum, odio cupiditate at ipsum dolores explicabo obcaecati illo iure, recusandae ex alias nisi aut?
+                        </p>
+
+                        <a href="#" class="button">
+                            Compra Ahora <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="{% static '/img/leaf-branch-2.png'%}" alt="home image" class="home__leaf-1">
+                <img src="{% static '/img/leaf-branch-4.png'%}" alt="home image" class="home__leaf-2">
+            </section>
+
+              <!--==================== NOSOTROS ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid" style="margin-top: 11rem; margin-bottom: 11rem;">
+                    <div class="about__data">
+                        <span class="section__subtitle">Sobre nosotros</span>
+                        <h2 class="section__title about__title">
+                            <div>
+                                Te brindamos la mejor comida <br>
+                                para que disfrutes
+                                <!-- <img src="/assets/img/popular-img.png" alt=""> -->
+                            </div>
+                        </h2>
+                        <p class="about__description">
+                            Ven a disfrutar de la mejor comida junto a nosotros, tenemos pereparados los mejores platos y las mejores bebidas para ti
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, enim nostrum reprehenderit recusandae repellendus fugiat nisi cum distinctio inventore perferendis voluptas vitae dignissimos vel consequatur optio odio accusantium quasi? Deserunt.
+                        </p>
+                    </div>
+                    <img src="{% static '/img/aboutus.png'%}" alt="about image" class="about__img">
+                </div>
+                <img src="{% static '/img/leaf-branch-1.png'%}" alt="about image" class="about__leaf">
+            </section>
+
+            <!-- =================== PRODUCTOS =================== -->
+            <section class="products section" id="products">
+                <span class="section__subtitle">Productos</span>
+                <h2 class="section__title">Variedad de productos para ti</h2>
+
+                <div class="popular__container container grid">
+                    <article class="popular__card">
+                        <img src="{% static '/img/about.png'%}" alt="popular image" class="popular__img">
+
+                        <h3 class="popular__name">Desayunos</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/bebidas-calientes.png'%}" alt="popular image" class="popular__img">
+
+                        <h3 class="popular__name">Bebidas Calientes</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/sandwich.png'%}" alt="popular image" class="popular__img" style="margin-top: 1rem;">
+
+                        <h3 class="popular__name">Sandwich</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/jugos.png'%}" alt="popular image" class="popular__img">
+
+                        <h3 class="popular__name">Jugos</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/refrescos.png'%}" alt="popular image" class="popular__img" style="width: 180px;">
+
+                        <h3 class="popular__name">Refrescos</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/frapuccinos.png'%}" alt="popular image" class="popular__img" style="width: 110px;">
+
+                        <h3 class="popular__name">Frapuccinos</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/about.png'%}" alt="popular image" class="popular__img">
+
+                        <h3 class="popular__name">Bebidas Frozen</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/bebidas.png'%}" alt="popular image" class="popular__img" style="width: 85px;">
+
+                        <h3 class="popular__name">Bebidas</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/hamburguesa.png'%}" alt="popular image" class="popular__img" style="width: 160px; margin-top: 1rem;">
+
+                        <h3 class="popular__name">Hamburguesa</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/salchipapa.png'%}" alt="popular image" class="popular__img" style="margin-top: 1rem;">
+
+                        <h3 class="popular__name">Salchipapa</h3>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/broaster.png'%}" alt="popular" class="popular__img" style="margin-top: 1rem;">
+
+                        <h3 class="popular__name">Broaster</h3>  
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/about.png'%}" alt="popular" class="popular__img" >
+
+                        <h3 class="popular__name">Guarniciones</h3>   
+                    </article>
+                </div>
+            </section>
+
+            <!--================== POPULAR ==================-->
+            <section class="popular section" id="popular">
+                <span class="section__subtitle">Populares</span>
+                <h2 class="section__title">Los mas pedido por nuestros clientes</h2>
+
+                <div class="popular__container container grid">
+                    <article class="popular__card">
+                        <img src="{% static '/img/about.png'%}" alt="popular image" class="popular__img">
+
+                        <h3 class="popular__name">Arrocito con huevito</h3>
+                            <span class="popular__description">Arroz con huevo</span>
+
+                            <span class="popular__price">S/.10.99</span>
+
+                            <button class="popular__button">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/about.png'%}" alt="popular" class="popular__img">
+
+                        <h3 class="popular__name">Arrocito con huevito</h3>
+                            <span class="popular__description">Arroz con huevo</span>
+
+                            <span class="popular__price">S/.10.99</span>
+
+                            <button class="popular__button">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                    </article>
+
+                    <article class="popular__card">
+                        <img src="{% static '/img/about.png'%}" alt="popular" class="popular__img">
+
+                        <h3 class="popular__name">Arrocito con huevito</h3>
+                            <span class="popular__description">Arroz con huevo</span>
+
+                            <span class="popular__price">S/.10.99</span>
+
+                            <button class="popular__button">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                    </article>
+
+                </div>
+            </section>
+
+            <!--==================== NOTICIAS ====================-->
+            <section class="newsletter section">
+                <div class="newsletter__container container">
+                    <div class="newsletter__content grid">
+                        <img src="{% static '/img/coffe.png'%}" alt="newsletter image" class="newsletter__img">
+
+                        <div class="newsletter__data">
+                            <span class="section__subtitle">Newsletter</span>
+                            <h2 class="section__title">Subscribete para <br>nuevas noticias</h2>
+
+                            <form action="" class="newsletter__form">
+                                <input type="email" class="newsletter__input" placeholder="Ingrese email">
+
+                                <button class="button newsletter__button"> Subscribete <i class="ri-send-plane-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+{%include "footer.html" %}
+
+
+
