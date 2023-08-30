@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "C:/Users/franc/OneDrive/Desktop/Proyectos/Vichama-Website/vichama/app/templates/pages/static"
+    "C:/Users/franc/OneDrive/Desktop/Proyectos/vichama/app/templates/pages/static"
 ]
 
 
